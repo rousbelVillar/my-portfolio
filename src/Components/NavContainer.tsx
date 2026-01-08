@@ -7,7 +7,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Fragment, useState } from "react";
 import { Resume } from "./Resume";
-import { Projects } from "./Projects";
+import Projects from "./Projects";
 
 export const NavContainer = () => {
   const navigation = [
