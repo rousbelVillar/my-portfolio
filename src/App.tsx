@@ -1,10 +1,12 @@
-import './App.css';
-import { NavContainer } from './Components/NavContainer';
+import "./App.css";
+import { ContentBubble } from "./Components/ContentBubble";
+import { ScrollSection } from "./Components/ScrollSection";
 
 function App() {
   return (
     <div className="App">
-      <NavContainer/>
+      <ContentBubble />
+      <ScrollSection />
     </div>
   );
 }
