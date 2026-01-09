@@ -14,7 +14,7 @@ export const Home = () => {
               width="100px"
               alt="resume_profile_pic"
               loading="lazy"
-              className="float-left rounded-full"
+              className="float-right rounded-full"
             />
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
               Rousbel Villar
