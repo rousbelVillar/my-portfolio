@@ -6,16 +6,16 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Fragment, useState } from "react";
-import { Resume } from "./Resume";
+import { Home } from "./Home";
 import Projects from "./Projects";
 
 export const NavContainer = () => {
   const navigation = [
-    { name: "Resume", view: "resume" },
+    { name: "Home", view: "home" },
     { name: "Projects", view: "projects" },
   ] as const;
 
-  const [activeView, UseActiveView] = useState<"resume" | "projects">("resume");
+  const [activeView, UseActiveView] = useState<"home" | "projects">("home");
 
   function classNames(...classes: any) {
     return classes.filter(Boolean).join(" ");
@@ -97,7 +97,7 @@ export const NavContainer = () => {
       </Disclosure>
 
       <div className="w-full">
-        {activeView === "resume" && <Resume />}
+        {activeView === "home" && <Home />}
         {activeView === "projects" && <Projects />}
       </div>
     </Fragment>

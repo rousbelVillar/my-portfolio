@@ -1,15 +1,16 @@
 import { Fragment } from "react/jsx-runtime";
 
-export const Resume = () => {
+export const Home = () => {
   const posts = [
     {
       id: 1,
       title: "New Fire Global Partners",
       href: "#",
-      description: "Worked as a senior fron-end developer for centene.",
-      date: "Sep 2022 - Jan 2025",
+      description:
+        "Newfire Global Partners is an American company and a leader in software development & IT services with worldwide operations that span four continents.",
+      date: "Founded 2016",
       datetime: "",
-      category: { title: "Outsourced", href: "#" },
+      category: { title: "Outsourcing", href: "#" },
       author: {
         name: "",
         role: "",
@@ -23,16 +24,16 @@ export const Resume = () => {
       title: "Epam Systems",
       href: "#",
       description:
-        "Worked as a senior front-end developer for Reinassance Learning.",
-      date: "Sep 2021 - Sep 2022",
+        "EPAM Systems, Inc. is an American company that specializes in software engineering services, digital platform engineering, and digital product design, operating out of Newtown, Pennsylvania. EPAM is a founding member of the MACH Alliance.",
+      date: "Founded 1993",
       datetime: "",
-      category: { title: "Outsourced", href: "#" },
+      category: { title: "Outsourcing", href: "#" },
       author: {
         name: "",
         role: "",
         href: "#",
         imageUrl:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxPtwQrKDLY0XsdCf2pP1IdyJJjLHAQssXRQ&s",
+          "https://www.eisgroup.com/wp-content/uploads/2025/07/EPAM-1.png",
       },
     },
     {
@@ -40,16 +41,16 @@ export const Resume = () => {
       title: "Newtech Global",
       href: "#",
       description:
-        "Started as QA automation developer and moved to junior front-end developer in Verizon Enterprise",
-      date: "Aug 2017 - Feb 2021",
-      datetime: "2020-02-12",
-      category: { title: "Outsourced", href: "#" },
+        "Newtech Global in the Dominican Republic is a leading Business Process Outsourcing (BPO) and technology firm, offering customer service, IT support, software development.",
+      date: "Founded 2005",
+      datetime: "",
+      category: { title: "Outsourcing", href: "#" },
       author: {
         name: "",
         role: "",
         href: "#",
         imageUrl:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7V8I-Z4i-ABdbs5xtJbOMekXhRjYz_KU0Kw&s",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
       },
     },
   ];
