@@ -1,56 +1,56 @@
 import { Fragment } from "react/jsx-runtime";
 
-export const Resume = () => {
+export const Home = () => {
   const posts = [
     {
       id: 1,
-      title: "Boost your conversion rate",
+      title: "New Fire Global Partners",
       href: "#",
       description:
-        "Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.",
-      date: "Mar 16, 2020",
-      datetime: "2020-03-16",
-      category: { title: "Marketing", href: "#" },
+        "Newfire Global Partners is an American company and a leader in software development & IT services with worldwide operations that span four continents.",
+      date: "Founded 2016",
+      datetime: "",
+      category: { title: "Outsourcing", href: "#" },
       author: {
-        name: "Michael Foster",
-        role: "Co-Founder / CTO",
+        name: "",
+        role: "",
         href: "#",
         imageUrl:
-          "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          "https://cookie-cdn.cookiepro.com/logos/790eb134-7059-40c3-914a-dc668ec03813/018dc6e2-dc19-7025-871d-07a76ab2693d/f9a5901d-f60d-40ab-aec9-d7e1f5e8de46/Newfire_logo.png",
       },
     },
     {
       id: 2,
-      title: "How to use search engine optimization to drive sales",
+      title: "Epam Systems",
       href: "#",
       description:
-        "Optio cum necessitatibus dolor voluptatum provident commodi et. Qui aperiam fugiat nemo cumque.",
-      date: "Mar 10, 2020",
-      datetime: "2020-03-10",
-      category: { title: "Sales", href: "#" },
+        "EPAM Systems, Inc. is an American company that specializes in software engineering services, digital platform engineering, and digital product design, operating out of Newtown, Pennsylvania. EPAM is a founding member of the MACH Alliance.",
+      date: "Founded 1993",
+      datetime: "",
+      category: { title: "Outsourcing", href: "#" },
       author: {
-        name: "Lindsay Walton",
-        role: "Front-end Developer",
+        name: "",
+        role: "",
         href: "#",
         imageUrl:
-          "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          "https://www.eisgroup.com/wp-content/uploads/2025/07/EPAM-1.png",
       },
     },
     {
       id: 3,
-      title: "Improve your customer experience",
+      title: "Newtech Global",
       href: "#",
       description:
-        "Cupiditate maiores ullam eveniet adipisci in doloribus nulla minus. Voluptas iusto libero adipisci rem et corporis. Nostrud sint anim sunt aliqua. Nulla eu labore irure incididunt velit cillum quis magna dolore.",
-      date: "Feb 12, 2020",
-      datetime: "2020-02-12",
-      category: { title: "Business", href: "#" },
+        "Newtech Global in the Dominican Republic is a leading Business Process Outsourcing (BPO) and technology firm, offering customer service, IT support, software development.",
+      date: "Founded 2005",
+      datetime: "",
+      category: { title: "Outsourcing", href: "#" },
       author: {
-        name: "Tom Cook",
-        role: "Director of Product",
+        name: "",
+        role: "",
         href: "#",
         imageUrl:
-          "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
       },
     },
   ];
@@ -59,12 +59,20 @@ export const Resume = () => {
     <Fragment>
       <div className=" py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
+          <div className="mx-auto lg:mx-0">
+            <img
+              src="https://i.postimg.cc/dQyvHKqC/DSC_0106.jpg"
+              height="100px"
+              width="100px"
+              alt="resume_profile_pic"
+              loading="lazy"
+              className="float-right rounded-full"
+            />
             <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-              From the blog
+              Rousbel Villar
             </h2>
             <p className="mt-2 text-lg/8 text-gray-300">
-              Learn how to grow your business with our expert advice.
+              Software Engineer specialized in full stack development.
             </p>
           </div>
           <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-700 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
@@ -74,6 +82,11 @@ export const Resume = () => {
                 className="flex max-w-xl flex-col items-start justify-between"
               >
                 <div className="flex items-center gap-x-4 text-xs">
+                  <img
+                    alt=""
+                    src={post.author.imageUrl}
+                    className="size-10 rounded-full bg-gray-800 float-end"
+                  />
                   <time dateTime={post.datetime} className="text-gray-400">
                     {post.date}
                   </time>
@@ -96,11 +109,6 @@ export const Resume = () => {
                   </p>
                 </div>
                 <div className="relative mt-8 flex items-center gap-x-4 justify-self-end">
-                  <img
-                    alt=""
-                    src={post.author.imageUrl}
-                    className="size-10 rounded-full bg-gray-800"
-                  />
                   <div className="text-sm/6">
                     <p className="font-semibold text-white">
                       <a href={post.author.href}>
