@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className=" mt-[10em] md:mr-[10em] md:ml-[10em] sm:mr-0 sm:ml-0">
+    <div className=" mt-[10em]  sm:mr-0 sm:ml-0 lg:mr-[5em]">
       <p>
         I'm a software developer specializing in full-stack web development;
         however, my experience has leaned more toward front-end development. I
