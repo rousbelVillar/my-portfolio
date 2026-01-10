@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className=" mt-[6em] sm:mx-[3em]">
+    <div className=" mt-[6em]">
       <p>
         I'm a software developer specializing in full-stack web development;
         however, my experience has leaned more toward front-end development. I
@@ -9,12 +9,12 @@ export const About = () => {
         accessible and easy to use.
         <br></br>
         <br></br>
-        Currently, I work as a Senior Front-End Engineer at New Fire Global
+        {/* Currently, I work as a Senior Front-End Engineer at New Fire Global
         Partners, supporting a managed care and healthcare solutions
         organization. I contribute to four UI projects, ensuring that components
         and features meet quality, accessibility, and user experience standards.
         <br />
-        <br />
+        <br /> */}
         In the past, I’ve had the opportunity to work with a variety of large
         corporations and outsourcing partners across industries such as
         healthcare, communications, and learning aid software.
