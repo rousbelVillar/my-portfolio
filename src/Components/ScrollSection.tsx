@@ -3,7 +3,7 @@ import { Companies } from "./Companies";
 
 export const ScrollSection = () => {
   return (
-    <section className="lg:float-end lg:w-[50%] lg:ml-0 lg:mr-[3em] ml-[2em] mr-[2.5em] sm:w-[100%] h-[100%] text-white">
+    <section className="relative w-full px-4 pb-20 pt-12 text-white lg:ml-auto lg:w-1/2 lg:px-8">
       <About />
       <Companies />
     </section>
