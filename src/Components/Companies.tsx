@@ -5,7 +5,8 @@ const chips = (chips: string[]) => {
     <Chip
       color="primary"
       variant="outlined"
-      className="w-[max-content]"
+      className="max-w-full truncate"
+      size="small"
       label={chip}
     ></Chip>
   ));
@@ -70,12 +71,16 @@ export const Companies = () => {
   ];
 
   return (
-    <div className="mt-[2em] lg:ml-[2.5em] mb-20 grid gap-y-2 pt-10 sm:pt-16  ">
+    <div className="mt-[2em]  mb-20 grid gap-y-2 pt-10 sm:pt-16  ">
       <h1 className="text-lg/8 font-bold text-gray-300">Experience</h1>
       {posts.map((post) => (
         <article
           key={post.id}
-          className="relative grid grid-cols-[140px_1fr] gap-x-4 rounded-md border border-black p-[2em] hover:bg-gray-800 cursor-pointer"
+          className="    
+          relative z-0 flex flex-col gap-3 
+          rounded-md border border-black 
+          p-4 hover:bg-gray-800 cursor-pointer
+          lg:grid lg:grid-cols-[140px_1fr] lg:gap-x-4 lg:p-[2em]"
         >
           <a
             href={post.href}
@@ -87,28 +92,30 @@ export const Companies = () => {
 
           <time
             dateTime={post.datetime}
-            className="mt-2 text-xs text-gray-400 z-20"
+            className="text-xs text-gray-400 z-20 lg:mt-2"
           >
             {post.date}
           </time>
 
-          <h3 className="col-start-2 z-20 flex items-center gap-x-3 text-lg font-semibold text-white">
-            {post.company.imageUrl && (
-              <img
-                alt=""
-                src={post.company.imageUrl}
-                className="size-8 rounded-full"
-              />
-            )}
-            <span className="hover:text-gray-300">{post.title}</span>
-          </h3>
+          <div className="z-20 sm:col-start-2">
+            <h3 className="z-20 flex items-center gap-x-3 text-base font-semibold text-white lg:col-start-2 lg:text-lg">
+              {post.company.imageUrl && (
+                <img
+                  alt=""
+                  src={post.company.imageUrl}
+                  className="h-8 w-8 rounded-full shrink-0"
+                />
+              )}
+              <span className="hover:text-gray-300">{post.title}</span>
+            </h3>
 
-          <p className="col-start-2 z-20 mt-5 text-sm text-gray-400">
-            {post.description}
-          </p>
+            <p className="z-20 text-sm text-gray-400 lg:col-start-2 lg:mt-5">
+              {post.description}
+            </p>
 
-          <div className="col-start-2 z-20 mt-5 flex gap-2">
-            {chips(post.techStack)}
+            <div className="  z-20 mt-3 flex flex-wrap gap-2 lg:col-start-2 lg:mt-5">
+              {chips(post.techStack)}
+            </div>
           </div>
         </article>
       ))}
