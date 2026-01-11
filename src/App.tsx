@@ -4,7 +4,7 @@ import { ScrollSection } from "./Components/ScrollSection";
 
 function App() {
   return (
-    <div className="App min-h-screen overflow-x-hidden bg-black">
+    <div className="App min-h-screen overflow-x-hidden">
       <ContentBubble />
       <ScrollSection />
     </div>
