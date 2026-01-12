@@ -80,7 +80,7 @@ export const Companies = () => {
           className="
           group    
            transition hover:scale-105 duration-300 ease-in-out
-          relative z-0 flex flex-col gap-3 
+          relative flex flex-col gap-3 
           rounded-md border border-black 
           p-4 hover:bg-gray-800 cursor-pointer
           lg:grid lg:grid-cols-[140px_1fr] lg:gap-x-4 lg:p-[2em]"
@@ -95,13 +95,13 @@ export const Companies = () => {
 
           <time
             dateTime={post.datetime}
-            className="text-xs text-gray-400 z-20 lg:mt-2"
+            className="text-xs text-gray-400  lg:mt-2"
           >
             {post.date}
           </time>
 
-          <div className="z-20 sm:col-start-2">
-            <h3 className="z-20 flex items-center gap-x-3 text-base font-semibold text-white lg:col-start-2 lg:text-lg">
+          <div className=" sm:col-start-2">
+            <h3 className=" flex items-center gap-x-3 text-base font-semibold text-white lg:col-start-2 lg:text-lg">
               {post.company.imageUrl && (
                 <img
                   alt=""
@@ -117,11 +117,11 @@ export const Companies = () => {
               </span>
             </h3>
 
-            <p className="z-20 text-sm text-gray-400 lg:col-start-2 lg:mt-5">
+            <p className=" text-sm text-gray-400 lg:col-start-2 lg:mt-5">
               {post.description}
             </p>
 
-            <div className="  z-20 mt-3 flex flex-wrap gap-2 lg:col-start-2 lg:mt-5">
+            <div className="   mt-3 flex flex-wrap gap-2 lg:col-start-2 lg:mt-5">
               {chips(post.techStack)}
             </div>
           </div>
