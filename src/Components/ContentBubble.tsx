@@ -22,11 +22,12 @@ export const ContentBubble = () => {
             target="post.href"
             rel="noopener noreferrer"
             aria-label="Github"
+            className="animate-bounce"
           >
             <GitHubIcon />
           </IconButton>
           <IconButton
-            className="mt-2"
+            className="mt-2 animate-bounce"
             href="https://www.linkedin.com/in/rousbel-villar-2496628b/"
             size="small"
             color="primary"

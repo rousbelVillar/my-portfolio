@@ -1,4 +1,5 @@
-import { Chip } from "@mui/material";
+import { Chip, IconButton } from "@mui/material";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 const chips = (chips: string[]) => {
   return chips.map((chip: string) => (
@@ -76,7 +77,9 @@ export const Companies = () => {
       {posts.map((post) => (
         <article
           key={post.id}
-          className="    
+          className="
+          group    
+           transition hover:scale-105 duration-300 ease-in-out
           relative z-0 flex flex-col gap-3 
           rounded-md border border-black 
           p-4 hover:bg-gray-800 cursor-pointer
@@ -86,7 +89,7 @@ export const Companies = () => {
             href={post.href}
             target="post.href"
             rel="noopener noreferrer"
-            className="absolute inset-0 z-10"
+            className="absolute top-0 bottom-0 left-0 right-0 z-1 w-100 h-100"
             aria-label={`Visit ${post.title}`}
           />
 
@@ -107,6 +110,11 @@ export const Companies = () => {
                 />
               )}
               <span className="hover:text-gray-300">{post.title}</span>
+              <span className="group-hover:animate-bounce">
+                <IconButton color="primary">
+                  <ArrowOutwardIcon fontSize="small"></ArrowOutwardIcon>
+                </IconButton>
+              </span>
             </h3>
 
             <p className="z-20 text-sm text-gray-400 lg:col-start-2 lg:mt-5">
