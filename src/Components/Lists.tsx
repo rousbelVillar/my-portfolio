@@ -22,7 +22,7 @@ type ListsProps = {
 
 export const Lists = ({ items, subtitle }: ListsProps) => {
   return (
-    <div className="mt-[2em]  mb-20 grid gap-y-2 pt-10 sm:pt-16  ">
+    <div className=" grid gap-y-2 pt-10 sm:pt-16  ">
       <h1 className="text-lg/8 font-bold text-gray-300">{subtitle}</h1>
       {items.map((post) => (
         <article
