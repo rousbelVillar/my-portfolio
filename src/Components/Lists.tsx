@@ -29,11 +29,11 @@ export const Lists = ({ items, subtitle }: ListsProps) => {
           key={post.id}
           className="
           group    
-           transition hover:scale-105 ease-in-out
+           transition hover:scale-105 md:hover:scale-100 ease-in-out
           relative flex flex-col gap-3 
           rounded-md border border-black 
           p-4 hover:bg-gray-800 cursor-pointer
-          lg:grid lg:grid-cols-[140px_1fr] lg:gap-x-4 lg:p-[2em]"
+          lg:grid lg:grid-cols-[140px_1fr] lg:gap-x-4 lg:p-[2em] md:p-[4em]"
         >
           <a
             href={post.href}
@@ -54,7 +54,7 @@ export const Lists = ({ items, subtitle }: ListsProps) => {
             <img
               src={post.imageProjectUrl}
               alt=""
-              className="border-white rounded-sm"
+              className="border-white rounded-sm p-0"
             />
           ) : null}
 
