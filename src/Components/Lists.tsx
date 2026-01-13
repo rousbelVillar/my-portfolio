@@ -54,7 +54,7 @@ export const Lists = ({ items, subtitle }: ListsProps) => {
             <img
               src={post.imageProjectUrl}
               alt=""
-              className="border-white rounded-md"
+              className="border-white rounded-sm"
             />
           ) : null}
 
