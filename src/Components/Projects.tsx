@@ -4,7 +4,7 @@ export const Projects = () => {
   const projects: any[] = [
     {
       id: 1,
-      title: "Oceanc compiler",
+      title: "Oceanc Compiler",
       iconLink: "github",
       href: "https://github.com/rousbelVillar/oceanc",
       description:
