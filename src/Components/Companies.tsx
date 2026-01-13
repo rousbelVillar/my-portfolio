@@ -1,7 +1,7 @@
 import { Lists } from "./Lists";
 
 export const Companies = () => {
-  const companies = [
+  const companies: any = [
     {
       id: 1,
       title: "Senior Frontend Engineer - New Fire",
@@ -13,6 +13,7 @@ export const Companies = () => {
         "https://cookie-cdn.cookiepro.com/logos/790eb134-7059-40c3-914a-dc668ec03813/018dc6e2-dc19-7025-871d-07a76ab2693d/f9a5901d-f60d-40ab-aec9-d7e1f5e8de46/Newfire_logo.png",
       imageProjectUrl: "",
       techStack: ["Angular", "Golang", "Mongo DB", "Node.js"],
+      iconLink: "arrow",
     },
     {
       id: 2,
@@ -24,6 +25,7 @@ export const Companies = () => {
       imageUrl: "https://s3-symbol-logo.tradingview.com/epam-sys--600.png",
       imageProjectUrl: "",
       techStack: ["Angular", "Express", "Mongo DB", "Node.js"],
+      iconLink: "arrow",
     },
     {
       id: 3,
@@ -36,6 +38,7 @@ export const Companies = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
       imageProjectUrl: "",
       techStack: ["Angular", "React", "Golang", "Mongo DB", "Node.js"],
+      iconLink: "arrow",
     },
     {
       id: 4,
@@ -48,6 +51,7 @@ export const Companies = () => {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
       imageProjectUrl: "",
       techStack: ["Java", "Selenium", "Postman", "Maven", "JMeter"],
+      iconLink: "arrow",
     },
   ];
 

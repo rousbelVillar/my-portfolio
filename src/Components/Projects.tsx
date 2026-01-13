@@ -5,25 +5,27 @@ export const Projects = () => {
     {
       id: 1,
       title: "Oceanc compiler",
-      href: "https://www.newfireglobal.com/",
-      description: "I made a c++ mini compiler with Bison + Flex. ",
+      iconLink: "github",
+      href: "https://github.com/rousbelVillar/oceanc",
+      description:
+        "I made a mini compiler that supports some functional programming features.",
       date: "",
-      imageProjectUrl:
-        "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
-      techStack: ["Angular", "Golang", "Mongo DB", "Node.js"],
+      imageProjectUrl: "https://iili.io/fvpxHnS.md.png",
+      techStack: ["C++", "Flex", "Bison"],
     },
     {
       id: 2,
       title: "Budget App",
-      href: "https://www.epam.com/",
+      iconLink: "github",
+      href: "https://github.com/rousbelVillar/budget-tracker-frontend",
       description:
-        "Served as a full-stack engineer, creating Web applications for a learning web platform used across the United States, helping teachers grade, provide assignments, and learning programs to their students.",
+        "Budgeting dashboard built with Vue 3 and TypeScript that helps users track expenses, visualize spending, and manage personal finances.",
       date: "",
       datetime: "",
       imageProjectUrl:
         "https://images.unsplash.com/photo-1575936123452-b67c3203c357?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
 
-      techStack: ["Angular", "Express", "Mongo DB", "Node.js"],
+      techStack: ["Vue", "Typescript", "Python", "Flask", "SQLite"],
     },
   ];
 

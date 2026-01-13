@@ -1,5 +1,6 @@
 import IconButton from "@mui/material/IconButton";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { chips } from "../utils/globals";
 
 type ListItem = {
@@ -11,6 +12,7 @@ type ListItem = {
   imageUrl: string;
   imageProjectUrl?: string;
   techStack: string[];
+  iconLink: "arrow" | "github";
 };
 
 type ListsProps = {
@@ -49,7 +51,11 @@ export const Lists = ({ items, subtitle }: ListsProps) => {
               {post.date}
             </time>
           ) : post.imageProjectUrl ? (
-            <img src={post.imageProjectUrl} alt="" className="border-white" />
+            <img
+              src={post.imageProjectUrl}
+              alt=""
+              className="border-white rounded-md"
+            />
           ) : null}
 
           <div className=" sm:col-start-2">
@@ -63,9 +69,22 @@ export const Lists = ({ items, subtitle }: ListsProps) => {
               )}
               <span className="hover:text-gray-300">{post.title}</span>
               <span className="group-hover:animate-bounce">
-                <IconButton color="primary">
-                  <ArrowOutwardIcon fontSize="small"></ArrowOutwardIcon>
-                </IconButton>
+                {post.iconLink === "arrow" ? (
+                  <IconButton color="primary">
+                    <ArrowOutwardIcon fontSize="small"></ArrowOutwardIcon>
+                  </IconButton>
+                ) : post.iconLink === "github" ? (
+                  <IconButton
+                    size="small"
+                    color="primary"
+                    href="https://github.com/rousbelVillar"
+                    target="post.href"
+                    rel="noopener noreferrer"
+                    aria-label="Github"
+                  >
+                    <GitHubIcon />
+                  </IconButton>
+                ) : null}
               </span>
             </h3>
 
