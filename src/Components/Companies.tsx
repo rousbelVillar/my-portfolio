@@ -51,5 +51,9 @@ export const Companies = () => {
     },
   ];
 
-  return <Lists items={companies} subtitle="Experience" />;
+  return (
+    <section id="companies" className="scroll-mt-24">
+      <Lists items={companies} subtitle="Experience" />
+    </section>
+  );
 };
