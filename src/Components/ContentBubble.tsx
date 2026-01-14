@@ -1,7 +1,7 @@
-// ContentBubble.jsx
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { IconButton } from "@mui/material";
+import MaximizeIcon from "@mui/icons-material/Maximize";
 
 const navItems = [
   { id: "about", label: "About" },
@@ -32,23 +32,24 @@ export const ContentBubble = ({ activeSection }: any) => {
           I like building stunning and functional software.
         </p>
 
-        <nav className="absolute left-[1em] top-[25vh]">
+        <nav className="hidden lg:block lg:absolute lg:top-[20vh] lg:p-4">
           {navItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollTo(item.id)}
-              className={`block text-left transition-all ${
+              className={`block text-left transition-all text-sm ${
                 activeSection === item.id
                   ? "text-cyan-400 font-semibold translate-x-2"
                   : "text-slate-400 hover:text-slate-200"
               }`}
             >
-              {"-----  " + item.label}
+              <MaximizeIcon className="mt-3 animate-pulse" fontSize="small" />
+              {"      " + item.label}
             </button>
           ))}
         </nav>
 
-        <div className="lg:absolute lg:top-[40vh] lg:left-[15vw] flex px-4 gap-2">
+        <div className="lg:absolute lg:top-[40vh] lg:mt-0 mt-[3em] flex px-4 gap-2 animate-bounce">
           <IconButton
             size="small"
             color="primary"
@@ -71,7 +72,7 @@ export const ContentBubble = ({ activeSection }: any) => {
         <img
           src="https://i.postimg.cc/g0gcHN1X/Untitled-Artwork.gif"
           alt="Rousbel surfing animation"
-          className="relative lg:top-0 lg:right-[8vw] top-[12vh]"
+          className="relative lg:top-0 lg:right-[8vw] md:top-[8vh] top-[12vh] z-[-1]"
         />
       </div>
     </section>
