@@ -1,6 +1,9 @@
 export const About = () => {
   return (
-    <div className="lg:pt-[5em] md:pt-[8em] pt-[12em] max-w-prose">
+    <section
+      id="about"
+      className="lg:pt-[3em] md:pt-[8em] pt-[12em] max-w-prose scroll-mt-24"
+    >
       <p className="leading-relaxed">
         I'm a software developer specializing in full-stack web development;
         however, my experience has leaned more toward front-end development. I
@@ -23,6 +26,6 @@ export const About = () => {
         In my spare time, I enjoy surfing, snowboarding, playing video games,
         hiking, and traveling with my wife.
       </p>
-    </div>
+    </section>
   );
 };

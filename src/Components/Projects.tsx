@@ -29,5 +29,9 @@ export const Projects = () => {
     },
   ];
 
-  return <Lists items={projects} subtitle="Projects"></Lists>;
+  return (
+    <section className="scroll-mt-24">
+      <Lists items={projects} subtitle="Projects"></Lists>
+    </section>
+  );
 };
