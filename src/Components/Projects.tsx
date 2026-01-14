@@ -3,7 +3,7 @@ import { Lists } from "./Lists";
 export const Projects = () => {
   const projects: any[] = [
     {
-      id: 1,
+      id: 6,
       title: "Oceanc Compiler",
       iconLink: "github",
       href: "https://github.com/rousbelVillar/oceanc",
@@ -14,7 +14,7 @@ export const Projects = () => {
       techStack: ["C++", "Flex", "Bison"],
     },
     {
-      id: 2,
+      id: 7,
       title: "Budget App",
       iconLink: "github",
       href: "https://github.com/rousbelVillar/budget-tracker-frontend",
@@ -30,7 +30,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="scroll-mt-24">
+    <section id="projects" className="scroll-mt-24">
       <Lists items={projects} subtitle="Projects"></Lists>
     </section>
   );
