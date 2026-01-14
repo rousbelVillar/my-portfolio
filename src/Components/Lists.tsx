@@ -27,13 +27,10 @@ export const Lists = ({ items, subtitle }: ListsProps) => {
       {items.map((post) => (
         <article
           key={post.id}
-          className="
-          group    
-           transition hover:scale-105 md:hover:scale-100 ease-in-out
-          relative flex flex-col gap-3 
-          rounded-md border border-black 
-          p-4 hover:bg-gray-800 cursor-pointer
-          lg:grid lg:grid-cols-[140px_1fr] lg:gap-x-4 lg:p-[2em] md:p-[4em]"
+          className={
+            "group transition hover:scale-105 md:hover:scale-100 ease-in-out relative flex flex-col gap-3 rounded-md border border-black p-2 hover:bg-gray-800 cursor-pointer lg:grid lg:grid-cols-[140px_1fr] lg:gap-x-4 lg:p-[2em] " +
+            (post.imageProjectUrl ? "md:p-[8em]" : "")
+          }
         >
           <a
             href={post.href}

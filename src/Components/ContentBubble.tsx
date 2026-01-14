@@ -39,7 +39,7 @@ export const ContentBubble = () => {
           </IconButton>
         </div>
         <img
-          src="https://i.postimg.cc/gJXZp2jg/Untitled-Artwork.gif"
+          src="https://i.postimg.cc/g0gcHN1X/Untitled-Artwork.gif"
           alt="Rousbel surfing animation"
           className="relative lg:top-[2vh] lg:right-[8vw] md:top-[8vh] top-[15vh]"
         ></img>
