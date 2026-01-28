@@ -32,7 +32,7 @@ export const ContentBubble = ({ activeSection }: any) => {
           I like building stunning and functional software.
         </p>
 
-        <nav className="hidden lg:block lg:absolute lg:top-[20vh] lg:p-4">
+        <nav className="hidden lg:flex lg:gap-5 lg:absolute lg:top-[20vh] lg:p-4  ">
           {navItems.map((item) => (
             <button
               key={item.id}
@@ -43,7 +43,6 @@ export const ContentBubble = ({ activeSection }: any) => {
                   : "text-slate-400 hover:text-slate-200"
               }`}
             >
-              <MaximizeIcon className="mt-3 animate-pulse" fontSize="small" />
               {"      " + item.label}
             </button>
           ))}
