@@ -30,7 +30,7 @@ export const Companies = () => {
       title: "Junior Frontend Engineer - Newtech",
       href: "https://www.newtechsa.com/",
       description:
-        "Served as a front-end Engineer, creating UI interfaces and features for the second-largest telecommunications company in the United States.",
+        "Newtech in Santo Domingo has had a contract with Verizon for years, In this role, I had my first opportunity as a software developer, creating UI interfaces and features for the second-largest telecommunications company in the United States.",
       date: "Feb 2020 - Feb 2021",
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
@@ -42,7 +42,7 @@ export const Companies = () => {
       title: "QA Automation Engineer - Newtech",
       href: "https://www.newtechsa.com/",
       description:
-        "Served as an automation developer for the second-largest telecommunications company in the United States.",
+        "As my first tech role I had the chance to be a junior QA Automation Engineer for Verizon. Creating, maintaining and deploying one of their Selenium automation frameworks",
       date: "Aug 2017 - Feb 2020",
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
