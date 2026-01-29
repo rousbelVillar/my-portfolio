@@ -10,7 +10,8 @@ export const Projects = () => {
       description:
         "I made a mini compiler that supports some functional programming features.",
       date: "",
-      imageProjectUrl: "https://iili.io/fvpxHnS.md.png",
+      imageProjectUrl:
+        "https://i.postimg.cc/9FX4knzm/Screenshot-2026-01-12-at-7-28-43-PM.png",
       techStack: ["C++", "Flex", "Bison"],
     },
     {
