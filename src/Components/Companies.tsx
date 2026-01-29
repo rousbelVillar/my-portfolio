@@ -19,7 +19,7 @@ export const Companies = () => {
       title: "Senior Frontend Engineer - Epam",
       href: "https://www.epam.com/",
       description:
-        "Served as a full-stack engineer, creating Web applications for a learning web platform used across the United States, helping teachers grade, provide assignments, and learning programs to their students.",
+        "Epam Systems partnered with Reinnsasance Learning and I was able to be part of the team that helped bring quality and excellent software services, helping teachers grade, provide assignments, and learning programs to their students.",
       date: "Sep 2021 - Sep 2022",
       imageUrl: "https://s3-symbol-logo.tradingview.com/epam-sys--600.png",
       techStack: ["Angular", "Express", "Mongo DB", "Node.js"],
@@ -30,7 +30,7 @@ export const Companies = () => {
       title: "Junior Frontend Engineer - Newtech",
       href: "https://www.newtechsa.com/",
       description:
-        "Served as a front-end Engineer, creating UI interfaces and features for the second-largest telecommunications company in the United States.",
+        "Newtech in Santo Domingo has had a contract with Verizon for years, In this role, I had my first opportunity as a software developer, creating UI interfaces and features for the second-largest telecommunications company in the United States.",
       date: "Feb 2020 - Feb 2021",
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
@@ -42,7 +42,7 @@ export const Companies = () => {
       title: "QA Automation Engineer - Newtech",
       href: "https://www.newtechsa.com/",
       description:
-        "Served as an automation developer for the second-largest telecommunications company in the United States.",
+        "As my first tech role I had the chance to be a junior QA Automation Engineer for Verizon. Creating, maintaining and deploying one of their Selenium automation frameworks",
       date: "Aug 2017 - Feb 2020",
       imageUrl:
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCIZBlTA4h5VTQSsDzAxAHhYLVee74rEyT1w&s",
