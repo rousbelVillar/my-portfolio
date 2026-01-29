@@ -4,10 +4,10 @@ export const Companies = () => {
   const companies: any = [
     {
       id: 1,
-      title: "Senior Frontend Engineer - New Fire",
+      title: "Senior Sotware Engineer - New Fire",
       href: "https://www.newfireglobal.com/",
       description:
-        "Served as a software developer of a health insurance company platform that was composed of several Angular micro-frontend applications, Golang, and MongoDB on the back-end, serving more than 500,000 users in the US.",
+        "NewFire provides Software services to several Healthcare coroporations one of them is Centene, I helped build, update and deploy four proyects that helped healthcare providers service their patients.",
       date: "Sep 2022 - Jan 2025",
       imageUrl:
         "https://cookie-cdn.cookiepro.com/logos/790eb134-7059-40c3-914a-dc668ec03813/018dc6e2-dc19-7025-871d-07a76ab2693d/f9a5901d-f60d-40ab-aec9-d7e1f5e8de46/Newfire_logo.png",
