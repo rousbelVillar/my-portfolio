@@ -19,7 +19,7 @@ export const Companies = () => {
       title: "Senior Frontend Engineer - Epam",
       href: "https://www.epam.com/",
       description:
-        "Served as a full-stack engineer, creating Web applications for a learning web platform used across the United States, helping teachers grade, provide assignments, and learning programs to their students.",
+        "Epam Systems partnered with Reinnsasance Learning and I was able to be part of the team that helped bring quality and excellent software services, helping teachers grade, provide assignments, and learning programs to their students.",
       date: "Sep 2021 - Sep 2022",
       imageUrl: "https://s3-symbol-logo.tradingview.com/epam-sys--600.png",
       techStack: ["Angular", "Express", "Mongo DB", "Node.js"],
